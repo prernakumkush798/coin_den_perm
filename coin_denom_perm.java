@@ -11,6 +11,9 @@ public static void coin_den_perm(int coin[],int total_amount,String ans) {
 		System.out.println(ans);
 		return;
 	}
+	if(total_amount<0) {
+		return;
+	}
 	 
 	for(int i=0;i<coin.length;i++) {
 	coin_den_perm(coin, total_amount-coin[i], ans+coin[i]);
